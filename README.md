@@ -1,1 +1,1 @@
-# codewars
+Python_codewars
