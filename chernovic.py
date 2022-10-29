@@ -1,35 +1,35 @@
-class IncrementCounter:
-
-    def __init__(self):
-        self._value = 0
-
-    def new_value(self):
-        self._value += 1
-        return self._value
-
-    def reset(self):
-        self._value = 0
-        return self._value
-
-
-def divisors(n):
-    counter = 0
-    for i in range(1, n+1):
-        if n % i == 0:
-            counter += 1
-    return counter
-
-
-def count_pairs_int(diff, n_max):
-    li =[divisors(i) for i in range(1, n_max+1)]
-    for k in range(0, diff):
-        for g in range(0, len(li) - diff, diff):
-            try:
-                if li[k+g] == li[k+g+diff]:
-                    counter1.new_value()
-            except:
-                continue
-    return counter1.new_value()-1
+# class IncrementCounter:
+#
+#     def __init__(self):
+#         self._value = 0
+#
+#     def new_value(self):
+#         self._value += 1
+#         return self._value
+#
+#     def reset(self):
+#         self._value = 0
+#         return self._value
+#
+#
+# def divisors(n):
+#     counter = 0
+#     for i in range(1, n+1):
+#         if n % i == 0:
+#             counter += 1
+#     return counter
+#
+#
+# def count_pairs_int(diff, n_max):
+#     li =[divisors(i) for i in range(1, n_max+1)]
+#     for k in range(0, diff):
+#         for g in range(0, len(li) - diff, diff):
+#             try:
+#                 if li[k+g] == li[k+g+diff]:
+#                     counter1.new_value()
+#             except:
+#                 continue
+#     return counter1.new_value()-1
 
 ########################################################
 
@@ -51,11 +51,11 @@ def count_pairs_int(diff, n_max):
 #########################################################
 
 
-counter1 = IncrementCounter()
-diff = 6
-n_max = 10000
-
-print(count_pairs_int(diff, n_max))
+# counter1 = IncrementCounter()
+# diff = 6
+# n_max = 10000
+#
+# print(count_pairs_int(diff, n_max))
 
 
 ###############################################################
@@ -103,3 +103,7 @@ print(count_pairs_int(diff, n_max))
 # # Возвращает число Фиббоначчи ряда (n)
 # def fib(n):
 #     return int(round((phi**n - (1-phi)**n) / 5**0.5))
+
+A = dict(zip('abcdef', list(range(6))))
+
+print(key, A[key])
