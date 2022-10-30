@@ -104,6 +104,8 @@
 # def fib(n):
 #     return int(round((phi**n - (1-phi)**n) / 5**0.5))
 
-A = dict(zip('abcdef', list(range(6))))
-
-print(key, A[key])
+def int32_to_ip(inta):
+    s = bin(inta)[2::] # stroka chisel
+    a = s.zfill(32) # stroka, dopolnennaja sleva nulyami
+    l = [int(a[2+n: 10+n: 1], 2) for n in range(0, 25, 8)]
+    return '.'.join(l)
