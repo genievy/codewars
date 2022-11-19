@@ -46,8 +46,6 @@
 ########################################################
 
 
-
-
 #########################################################
 
 
@@ -104,8 +102,12 @@
 # def fib(n):
 #     return int(round((phi**n - (1-phi)**n) / 5**0.5))
 
+###################################################################
+###################################################################
+
+
 def int32_to_ip(inta):
-    s = bin(inta)[2::] # stroka chisel
-    a = s.zfill(32) # stroka, dopolnennaja sleva nulyami
-    l = [int(a[2+n: 10+n: 1], 2) for n in range(0, 25, 8)]
+    s = bin(inta)[2::]  # stroka chisel
+    a = s.zfill(32)  # stroka, dopolnennaja sleva nulyami
+    l = str([int(a[2 + n: 10 + n: 1], 2) for n in range(0, 25, 8)])
     return '.'.join(l)
