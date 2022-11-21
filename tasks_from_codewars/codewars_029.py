@@ -24,7 +24,7 @@ def string_breakers(n, st):
         print(len(st)//n)
         l.append(st_united[n*i:n*(i+1)])
     st_new = '\n'.join(l)
-    return st_new
+    return st_new.strip('\n')
 
 
 # st = "This is an example stringwwetyeyew"

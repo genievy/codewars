@@ -106,8 +106,25 @@
 ###################################################################
 
 
-def int32_to_ip(inta):
-    s = bin(inta)[2::]  # stroka chisel
-    a = s.zfill(32)  # stroka, dopolnennaja sleva nulyami
-    l = str([int(a[2 + n: 10 + n: 1], 2) for n in range(0, 25, 8)])
-    return '.'.join(l)
+# def int32_to_ip(inta):
+#     s = bin(inta)[2::]  # stroka chisel
+#     a = s.zfill(32)  # stroka, dopolnennaja sleva nulyami
+#     l = str([int(a[2 + n: 10 + n: 1], 2) for n in range(0, 25, 8)])
+#     return '.'.join(l)
+
+
+def chain_sum(number):
+    result = number
+
+    def wrapper(number2=None):
+        nonlocal result
+        if number2 is None:
+            return result
+        result += number2
+        return wrapper
+    return wrapper
+
+
+print(chain_sum(5)())
+print(chain_sum(5)(2)())
+print(chain_sum(5)(100)(-10)())
