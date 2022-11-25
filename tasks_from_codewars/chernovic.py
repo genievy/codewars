@@ -113,18 +113,30 @@
 #     return '.'.join(l)
 
 
-def chain_sum(number):
-    result = number
+# def chain_sum(number):
+#     result = number
+#
+#     def wrapper(number2=None):
+#         nonlocal result
+#         if number2 is None:
+#             return result
+#         result += number2
+#         return wrapper
+#     return wrapper
+#
+#
+# print(chain_sum(5)())
+# print(chain_sum(5)(2)())
+# print(chain_sum(5)(100)(-10)())
 
-    def wrapper(number2=None):
-        nonlocal result
-        if number2 is None:
-            return result
-        result += number2
-        return wrapper
-    return wrapper
+
+def repl(s):
+    s_new = ''
+    for i in s:
+        if i.isalpha() or i.isspace():
+            s_new += i
+    return s_new
 
 
-print(chain_sum(5)())
-print(chain_sum(5)(2)())
-print(chain_sum(5)(100)(-10)())
+s ='Land of the Old Thirteen! Massachusetts land! land of Vermont and Connecticut!'
+print(repl(s))
