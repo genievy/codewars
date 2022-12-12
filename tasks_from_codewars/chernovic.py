@@ -130,13 +130,70 @@
 # print(chain_sum(5)(100)(-10)())
 
 
-def repl(s):
-    s_new = ''
-    for i in s:
-        if i.isalpha() or i.isspace():
-            s_new += i
-    return s_new
+# def repl(s):
+#     s_new = ''
+#     for i in s:
+#         if i.isalpha() or i.isspace():
+#             s_new += i
+#     return s_new
+#
+#
+# s ='Land of the Old Thirteen! Massachusetts land! land of Vermont and Connecticut!'
+# print(repl(s))
 
 
-s ='Land of the Old Thirteen! Massachusetts land! land of Vermont and Connecticut!'
-print(repl(s))
+# c = lambda x: "One" if x ** 2 < 1000 else "Two"
+#
+# print(c(25))
+
+def inp(l):
+    a = f"{l}"
+    print(a, type(a))
+
+l = ["d", 3.14]
+inp(l)
+
+
+# def sort_my_string(s, n):
+#     if n == 1:
+#         return s[::2] + s[1::2]
+#     else:
+#         s = s[::2] + s[1::2]
+#     return sort_my_string(s, n - 1)
+#
+#
+# def jumbled_string(s, n):
+#     s1 = s[::2] + s[1::2]
+#     # n = n - 1
+#     while n == True or s != s1:
+#         s = s[::2] + s[1::2]
+#         n -= 1
+#     return sort_my_string(s, n)
+
+
+
+
+
+# def jumbled_string(s, n):
+#     while n:
+#         s = '{}{}'.format(s[::2], s[1::2])
+#         n -= 1
+#     else:
+#         return '{}{}'.format(s[::2], s[1::2])
+
+
+# def jumbled_string(s, n):
+#     print(n)
+#     if n == 1:
+#         return '{}{}'.format(s[::2], s[1::2])
+#     else:
+#         s1 = '{}{}'.format(s[::2], s[1::2])
+#     return jumbled_string(s1, n - 1)
+
+
+# stra = "1234567890"
+# stra1 = "1234567890"
+# n = 50
+# n1 = 50
+# print(jumbled_string(stra, n))
+print(jumbled_string("better example",50))

@@ -4,8 +4,7 @@
 #     if n in [0, 1]:
 #         return n
 #     return fibonacci(n - 1) + fibonacci(n - 2)
-#
-#
+
 
 
 # from functools import lru_cache
@@ -61,14 +60,14 @@ def fibonacci(n):
 Максимально быстрый:
 """
 
-from functools import cache
-
-
-@cache
+# from functools import cache
+#
+#
+# @cache
 def fibonacci(n):
     if n in [0, 1]:
         return n
     return fibonacci(n - 1) + fibonacci(n - 2)
 
 
-print(fibonacci(1000000))
+print(fibonacci(10))
