@@ -14,4 +14,4 @@ Zero alone is fine, don't worry about it. Poor guy anyway
 
 
 def no_boring_zeros(n):
-    return int(str(n).rstrip("0"))
+    return int(str(n).rstrip("0")) if n != 0 else n
