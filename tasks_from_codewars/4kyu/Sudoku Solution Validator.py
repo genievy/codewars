@@ -38,7 +38,6 @@ validSolution([
 """
 
 
-
 def valid_solution(board):
     l1, l2, l3 = [], [], []
     for n in range(0, 9):

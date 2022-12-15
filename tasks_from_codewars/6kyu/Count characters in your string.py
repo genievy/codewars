@@ -20,6 +20,16 @@ def count(string):
 string = 'bananarama'
 print(count(string))
 
-# Best code
-# def count(string):
-#     return {i: string.count(i) for i in string}
+"""
+Best code:   
+    
+from collections import Counter
+
+def count(string):
+    return Counter(string)
+    
+or 
+
+def count(string):
+    return {i: string.count(i) for i in string}
+"""

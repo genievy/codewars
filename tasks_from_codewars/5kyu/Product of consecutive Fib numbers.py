@@ -89,7 +89,6 @@ productFib(800) # should return {34, 55, false},
 #             return [fib[0], fib[1], False]
 
 
-
 def productFib(prod):
     a, b = 0, 1
     while a * b <= prod:
