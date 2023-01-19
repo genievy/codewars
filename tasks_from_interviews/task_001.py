@@ -28,7 +28,7 @@ def my_func(list_of_letters):
         """
         s.lstrip('_') >>> This returns a str without a '_' on the left
         s.replace(s.lstrip('_'), '') >>> This "subtracts" from str the part that was obtained by the previous action
-        s.replace(s.lstrip('_'), '').replace('_', '.') >>> This replaces '_' with '.
+        s.replace(s.lstrip('_'), '').replace('_', '.') >>> This replaces '_' with '.'
         """
         left_part = s.replace(s.lstrip('_'), '').replace('_', '.')
         right_part = s.replace(s.rstrip('_'), '').replace('_', '.')
