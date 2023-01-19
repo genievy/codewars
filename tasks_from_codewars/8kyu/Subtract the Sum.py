@@ -1,6 +1,6 @@
 """
 Subtract the sum
-NOTE! This kata can be more difficult than regular 8-kyu katas (lets say 7 or 6 kyu)
+NOTE! This kata can be more difficult than regular 8-kyu kata (lets say 7 or 6 kyu)
 
 Complete the function which get an input number n such that n >= 10 and n < 10000, then:
 
@@ -125,5 +125,8 @@ There is no preloaded code to help you. This is not about coding skills; think b
 """
 
 
-def subtract_sum(number):
+def subtract_sum(a):
     return "apple"
+
+number=99
+print(subtract_sum(number))
