@@ -1,0 +1,9 @@
+name: Print the pushing parameters 
+on: push
+jobs:
+  set_time_pushing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the pushing date-time
+        run:  date
+  
