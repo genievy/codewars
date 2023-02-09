@@ -11,25 +11,20 @@ One word from the dictionary can be used several times.
 """
 
 
-# def valid_word(seq, word: str, result=False):
-#     for i in range(len(seq)):
-#         word_prim = word
-#         for n in seq[i:] + seq[:i]:
-#             word_prim = word_prim.replace(n, '')
-#         if len(word_prim) == 0:
-#             result = True
-#     return result
-
 def valid_word(seq, word: str, result=False):
     for i in range(len(seq)):
         word_prim = word
         li = seq[i:] + seq[:i]
-        for a in range(len(li)):
+        for a in range(len(word)):
             for n in li:
                 if word_prim.startswith(n):
                     word_prim = word_prim.replace(n, '', 1)
+                    break
             if len(word_prim) == 0:
                 result = True
+                break
+        if result:
+            break
     return result
 
 
