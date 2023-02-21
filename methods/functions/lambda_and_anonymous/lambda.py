@@ -131,3 +131,11 @@ lis = [1, 3, 5, 6, 2, ]
 # using reduce to compute maximum element from list
 print("The maximum element of the list is : ", end="")
 print(functools.reduce(lambda a, b: a if a > b else b, lis))
+
+"""
+list generator using lambda
+"""
+res = lambda seq: (i if seq.count(i) % 2 else None for i in seq)
+
+seq = [5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10]
+print(list(res(seq)))

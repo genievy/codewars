@@ -12,11 +12,13 @@ Examples
 """
 
 
-def find_it(seq):
-    for i in seq:
-        if seq.count(i) % 2:
-            return i
+# def find_it(seq):
+#     for i in seq:
+#         if seq.count(i) % 2:
+#             return i
 
 
-lista = [5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10]
-print(find_it(lista))
+res = lambda seq: (i if seq.count(i) % 2 else None for i in seq)
+
+seq = [5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10]
+print(list(res(seq)))
