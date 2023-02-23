@@ -71,7 +71,10 @@ if resp["status_code"] == 200:
 !!! Нарушено выравнивание (if --> else)
 """
 
-resp = {"data": ["station1", "station2"], "status_code": 200}
+resp = {
+        "data": ["station1", "station2"],
+        "status_code": 200
+        }
 
 if resp["status_code"] == 200:
     station_data = resp["data"]
