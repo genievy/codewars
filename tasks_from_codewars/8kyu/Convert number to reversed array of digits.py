@@ -19,3 +19,6 @@ def digitize(n):
     return map(int, str(n)[::-1])
     
 """
+
+n = 35231
+print(digitize(n))
